@@ -10,6 +10,7 @@
 \providecommand\thispdfpagelabel[1]{}
 \usepackage{lmodern}
 \usepackage[utf8]{inputenc}
+\usepackage{listings}
 %\usepackage[spanish]{babel}
 
 %Copenhagen, Warsaw
@@ -116,6 +117,157 @@
 	  for this.
   \end{itemize}
 
+\end{frame}
+
+\section{History of Free Software}<++>
+
+\begin{frame}
+  \frametitle{Before Unix there was caos}
+
+  \begin{block}{OS were written in assembler}
+	  \begin{itemize}
+		  \item Non portable OS.
+		  \item DEC: TOPS-10
+		  \item MIT/PDP-10: had ITS (Incompatible Time-sharing System.
+	  \end{itemize}
+  \end{block}
+
+  \begin{itemize}
+	  \item Each community start developing its own OS.
+	  \item Some machines started to EOL which lead to drop all specific
+		  ASM software.
+	  \item ARPANET appears and make possible interconnection cross-geo.
+	  \item \alert{Each community shared their Software}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{At the beginning there was Unix}
+
+  There were some important factors leading to Unix
+
+  \begin{itemize}
+	  \item Ken Thomson worked on Multics (time-sharing OS)
+	  \item Dennis Ritchie invented a portable language C
+	  \item Thomson used C to create Unix
+  \end{itemize}
+
+  \pause
+
+  \begin{alertblock}{Unix was a portable OS!}
+	  Writen in C it can be compiled for PDP-10, PDP-11, x86, etc.
+  \end{alertblock}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Unix got together the hacker community}
+
+  DEC decided to cancel all development on the PDP-10 to focus on PDP-11
+  forcing hackers to move to another OS, Unix.
+
+  Pros:
+  \begin{itemize}
+	  \item Most hackers moved to Unix.
+	  \item Software were ported to Unix.
+  \end{itemize}
+
+  Cons:
+  \begin{itemize}
+	  \item Unix was proprietary.
+	  \item The future of Unix were determined by a single company risking
+		  the community to rewrite once the owner decide to phase out Unix.
+	  \item It was impossible to improve the OS.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{The rise of GNU}
+
+  \begin{itemize}
+	  \item Richard Stallman founded the GNU project.
+	  \item RMS started to write a \alert{free} entire clone of Unix written in C.
+	  \item RMS \& GNU got with them the ITS culture to the new Unix one.
+	  \item The GNU project started writing the Hurd kernel for the GNU OS.
+  \end{itemize}
+
+  \hskip-20pt
+  \pause
+  \begin{center}
+	  Hurd is still in development\ldots
+  \end{center}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Just a kernel is needed}
+
+  \begin{itemize}
+	  \item GNU Needed a kernel to get a complete OS.
+	  \item Linus started writing an OS kernel as a small project while
+		  studying.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{What would you like to see most in minix?}
+
+  \begin{lstlisting}
+	  Hello everybody out there using minix -
+I'm doing a (free) operating system (just a hobby,
+won't be big and professional like gnu) for
+386(486) AT clones.  This has been brewing
+since april, and is starting to get ready.
+I'd like any feedback on things people like/dislike
+in minix, as my OS resembles it somewhat (same
+physical layout of the file-system (due to
+practical reasons) among other things).
+
+  \end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{What would you like to see most in minix?}
+
+  \begin{lstlisting}
+I've currently ported bash(1.08) and gcc(1.40), and
+things seem to work.  This implies that I'll get
+something practical within a few months, and I'd like
+to know what features most people would want.
+Any suggestions are welcome, but I won't promise
+I'll implement them :-)
+
+  Linus (torv...@kruuna.helsinki.fi)
+
+PS.  Yes - it's free of any minix code, and it has a
+multi-threaded fs.  It is NOT protable (uses 386 task
+switching etc), and it probably never will support anything
+other than AT-harddisks, as that's all I have :-(. 
+  \end{lstlisting}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Just a kernel is needed}
+
+  \begin{itemize}
+	  \item GNU Needed a kernel to get a complete OS.
+	  \item Linus started writing an OS kernel as a small project while
+		  studying.
+  \end{itemize}
+
+  \hskip-20pt
+
+  \begin{itemize}
+	  \item This new kernel got a lot of attention from the hacker
+		  community. 
+		  \pause
+	  \item \alert{Linus started to accept collaboration from hackers}
+  \end{itemize}
 \end{frame}
 
 \section{Why Open Source}
